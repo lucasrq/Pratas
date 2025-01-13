@@ -38,8 +38,8 @@ const SideBarCarrinho = styled.aside`
        
     } 
     .Footer{
-        
        
+        overflow-y:hidden;
         background-color:#fff;
         border:none;
         padding:40px;

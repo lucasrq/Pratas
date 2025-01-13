@@ -13,10 +13,10 @@ function Carrinho() {
   return (
     <>
       <motion.section
-        animate={{
+         animate={{
           x: isActive ? 0 : '100%', // Move o componente para dentro ou fora da tela
         }}
-        initial={{ x: '-100%' }} // Posição inicial fora da tela (à esquerda)
+        initial={{ x: '100%' }} // Inicia à direita, fora da tela
         exit={{ x: '100%' }} // Quando o carrinho for fechado, ele se move para a direita
         transition={{
           type: 'spring',
