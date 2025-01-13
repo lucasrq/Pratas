@@ -31,7 +31,7 @@ function Carrinho() {
           backgroundColor: '#fff',
           zIndex: 1000, // Garantir que o componente fique acima de outros
           overflow: 'hidden', // Impede qualquer overflow durante a animação
-          visibility: isActive ? 'visible' : 'hidden', // Fica visível quando ativo, invisível quando não
+          
         }}
       >
         <SideBarCarrinho>
