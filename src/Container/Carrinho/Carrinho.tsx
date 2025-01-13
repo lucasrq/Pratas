@@ -7,20 +7,20 @@ function Carrinho() {
   const { isActive, toggleActive } = useToggleStore();
 
   function Teste() {
-    console.log(isActive);
     toggleActive();
   }
-  
+
   return (
     <>
       <motion.section
         animate={{
           x: isActive ? 0 : '100%', // Move o componente para dentro ou fora da tela
         }}
-        initial={{ x: '-100%' }} // Posição inicial fora da tela
+        initial={{ x: '-100%' }} // Posição inicial fora da tela (à esquerda)
+        exit={{ x: '100%' }} // Quando o carrinho for fechado, ele se move para a direita
         transition={{
-          
-          stiffness: 100,
+          type: 'spring',
+          stiffness: 50,
         }}
         style={{
           position: 'absolute',
@@ -29,8 +29,8 @@ function Carrinho() {
           width: '100%',
           height: '100%',
           backgroundColor: '#fff',
-          display: isActive ? 'flex' : 'none',
-          overflowX:'hidden',
+          zIndex: 1000, // Garantir que o componente fique acima de outros
+          overflowX: 'hidden', // Impede o overflow horizontal
         }}
       >
         <SideBarCarrinho>
@@ -40,12 +40,28 @@ function Carrinho() {
           </section>
 
           <section className="MainCarrinho">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint laudantium
-            libero deleniti incidunt ullam natus officiis, sapiente expedita numquam nesciunt
-            recusandae tempore dicta autem doloribus consectetur repellendus necessitatibus voluptas?
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro quibusdam hic! Nobis iure vitae quam eos, maiores corrupti corporis provident consequuntur officiis doloribus. Voluptatem nulla labore nobis assumenda numquam.
+            <div className='product'>
+            os Produtos ficaram aqui
+            </div>
           </section>
+          <footer className='Footer'>
+            <div className='checkout'>
+              <span>SubTotal</span>
+              <span>R${122}</span>
+            </div>
+            <div className='checkout'>
+            <span>Frete</span>
+            <span>Gratis</span>
+            </div>
+            <div className='checkout'>
+            <span>Total</span>
+            <span>R${122}</span>
+            </div>
+            <div className='botao'>
+              <button>Finalizar Compra</button>
+            </div>
+           
+          </footer>
         </SideBarCarrinho>
       </motion.section>
     </>
