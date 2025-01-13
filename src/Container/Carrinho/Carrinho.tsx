@@ -13,7 +13,7 @@ function Carrinho() {
   return (
     <>
       <motion.section
-         animate={{
+        animate={{
           x: isActive ? 0 : '100%', // Move o componente para dentro ou fora da tela
         }}
         initial={{ x: '100%' }} // Inicia à direita, fora da tela
@@ -30,7 +30,8 @@ function Carrinho() {
           height: '100%',
           backgroundColor: '#fff',
           zIndex: 1000, // Garantir que o componente fique acima de outros
-          overflowX: 'hidden', // Impede o overflow horizontal
+          overflow: 'hidden', // Impede qualquer overflow durante a animação
+          visibility: isActive ? 'visible' : 'hidden', // Fica visível quando ativo, invisível quando não
         }}
       >
         <SideBarCarrinho>
@@ -41,7 +42,7 @@ function Carrinho() {
 
           <section className="MainCarrinho">
             <div className='product'>
-            os Produtos ficaram aqui
+              os Produtos ficaram aqui
             </div>
           </section>
           <footer className='Footer'>
@@ -50,17 +51,16 @@ function Carrinho() {
               <span>R${122}</span>
             </div>
             <div className='checkout'>
-            <span>Frete</span>
-            <span>Gratis</span>
+              <span>Frete</span>
+              <span>Gratis</span>
             </div>
             <div className='checkout'>
-            <span>Total</span>
-            <span>R${122}</span>
+              <span>Total</span>
+              <span>R${122}</span>
             </div>
             <div className='botao'>
               <button>Finalizar Compra</button>
             </div>
-           
           </footer>
         </SideBarCarrinho>
       </motion.section>
