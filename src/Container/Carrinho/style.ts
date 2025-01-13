@@ -10,7 +10,7 @@ const SideBarCarrinho = styled.aside`
     justify-content: space-between;
     width: 100%;
     min-width: 300px; /* Largura mínima */
-    height: 100vh; /* Garante que a barra lateral tenha altura total da tela */
+    height: 90vh; /* Garante que a barra lateral tenha altura total da tela */
     overflow-x: hidden; /* Impede o overflow horizontal */
     transition: transform 0.3s ease-in-out; /* Suaviza a animação */
 
