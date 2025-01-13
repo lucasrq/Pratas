@@ -11,7 +11,7 @@ function Carrinho() {
   }
 
   return (
-    <>
+    <div style={{ overflow: 'hidden', width: '100%', height: '100vh' }}>
       <motion.section
         animate={{
           x: isActive ? 0 : '100%', // Move o componente para dentro ou fora da tela
@@ -64,7 +64,7 @@ function Carrinho() {
           </footer>
         </SideBarCarrinho>
       </motion.section>
-    </>
+    </div>
   );
 }
 
