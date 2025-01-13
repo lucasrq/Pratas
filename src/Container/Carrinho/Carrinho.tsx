@@ -19,7 +19,7 @@ function Carrinho() {
         }}
         initial={{ x: '-100%' }} // Posição inicial fora da tela
         transition={{
-          type: 'spring',
+          
           stiffness: 100,
         }}
         style={{

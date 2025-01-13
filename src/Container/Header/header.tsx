@@ -4,7 +4,7 @@ import useToggleStore from "../../../store";
 
 
 function Header() {
-  const { isActive, toggleActive } = useToggleStore();
+  const { toggleActive } = useToggleStore();
   return (
     <>
       <HeaderStyle>

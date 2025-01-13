@@ -6,6 +6,7 @@ const SideBarCarrinho = styled.aside`
     top:0;
     right:-100;
     width:100%;
+    overflow-y:hidden;
     background-color:red;
     .HeaderCarrinho{
         display:flex;
