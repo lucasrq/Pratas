@@ -1,7 +1,8 @@
 import { MdClose } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import {useToggleSideBar} from '../../../store';
-import { SideBarWrapper } from './style';
+import { ListSideBar, SideBarWrapper } from './style';
+import SubTititulo from '../../Components/SubTitle';
 
 function SideBar() {
 
@@ -45,14 +46,18 @@ function SideBar() {
                 <MdClose size={24} color="#333"  />
             </div>
           </SideBarWrapper>
-
-            <ul>
+            <SubTititulo color='GreyTitle' size='ParagraphPrincipal'>Explore</SubTititulo>
+            <ListSideBar>
+                <li onClick={Teste}>Mais Vendidos</li>
+                <li onClick={Teste}>Colar</li>
+                <li onClick={Teste}>Brincos</li>
+                <li onClick={Teste}>Alianças</li>
+                <li onClick={Teste}>todos os produtos</li>
+                <li onClick={Teste}>Corentes</li>
                 <li><a href="https://wa.me/5511964503028?text=Ola%20Vim%20Direto%20do%20site%20JSPRATAS" target="_blank" rel="noopener noreferrer">
                 Contato
               </a></li>
-                <li onClick={Teste}>Mais Vendidos</li>
-                <li onClick={Teste}>Todos os Produtos</li>
-            </ul>
+            </ListSideBar>
         </div>
       </motion.section>
     </div>

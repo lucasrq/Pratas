@@ -23,3 +23,17 @@ border-bottom:1px solid #ccc;
         justify-content:center;
     }
 `
+export const ListSideBar = styled.ul`
+    font-size:21px;
+    padding-top:20px;
+    li{
+       margin-bottom:14px;
+       
+       width:30%;
+    }
+    a{
+        font-weight:bold;
+        text-decoration:none;
+        color:#333;
+    }
+`
