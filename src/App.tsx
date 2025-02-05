@@ -1,4 +1,3 @@
-import Product from "./Components/Product";
 import Carrinho from "./Container/Carrinho/Carrinho";
 import Header from "./Container/Header/header";
 import Main from "./Container/SectionMain";
