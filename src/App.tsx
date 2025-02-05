@@ -1,3 +1,4 @@
+import Product from "./Components/Product";
 import Carrinho from "./Container/Carrinho/Carrinho";
 import Header from "./Container/Header/header";
 import Main from "./Container/SectionMain";
@@ -5,7 +6,7 @@ import SideBar from "./Container/SideBar";
 
 function App() {
   return (
-    <div style={{ overflow: 'hidden', width: '100%', height: '100vh', position: 'relative' }}>
+    <div style={{ overflow: 'hidden', width: '100%', position: 'relative' }}>
      
       <Header />
       <Main/>

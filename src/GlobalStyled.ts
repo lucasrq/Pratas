@@ -11,6 +11,7 @@ const GlobalStyled = createGlobalStyle`
 
     body{
         overflow-x:hidden;
+        font-family:'Poppins' , sans-serif;
     }
  
 `
