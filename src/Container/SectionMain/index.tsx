@@ -1,12 +1,15 @@
+import Products from "../../Components/Products";
 import SubTititulo  from "../../Components/SubTitle";
 
 function Main(){
     return (
-        <>
+        <div>
           <SubTititulo color="GreyTitle" size="SubParagraph">
-                Explorar
-          </SubTititulo>
-        </>
+               Destaques
+          </SubTititulo> 
+
+        <Products/>
+        </div>
     )
 }
 
